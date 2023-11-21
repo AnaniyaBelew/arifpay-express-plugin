@@ -1,4 +1,5 @@
-require('dotenv').config()
+import dotenv from 'dotenv';
+dotenv.config();
 import { v4 as uuidv4 } from 'uuid';
 const BASE_URL=process.env.Base_url || "http://196.189.44.37:2000/api/sandbox";
 const MakePayment_url=process.env.Create_checkout_path || "/checkout/session";
@@ -42,3 +43,4 @@ export class ArifPay{
           });
     }
 }
+
