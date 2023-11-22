@@ -1,6 +1,5 @@
 require('dotenv').config()
 const { v4: uuidv4 } = require('uuid');
-const { check } = require('express-validator');
 const BASE_URL=process.env.Base_url || "http://196.189.44.37:2000/api/sandbox";
 const MakePayment_url=process.env.Create_checkout_path || "/checkout/session";
 class ArifPay{
